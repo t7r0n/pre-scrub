@@ -1,2 +1,0 @@
-[console_scripts]
-pre-scrub = pre_scrub.cli:main
