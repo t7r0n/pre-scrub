@@ -1,0 +1,30 @@
+[project]
+name = "pre-scrub"
+version = "0.1.0"
+description = "An ambulance billing pre submission scrubber: predicts the denial reason from the closed ePCR + dispatch trace, points the medic at the miss"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+pre-scrub = "pre_scrub.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

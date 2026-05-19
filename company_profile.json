@@ -1,0 +1,54 @@
+{
+  "company": "Overdrive Health",
+  "company_slug": "overdrive-health",
+  "repo": "pre-scrub",
+  "package": "pre_scrub",
+  "cli": "pre-scrub",
+  "title": "Pre Scrub",
+  "problem": "Ambulance claim denials are not random. They cluster on a small set of failure modes that are deterministic given the document: missing origin/destination modifiers (RH/SH/QL...), medical necessity narrative that doesn't justify the HCPCS A code chosen (A0427 ALS Emergency vs A0429 BLS Emergency), missing PCS (Physician Certification Statement) for non emergent transports, or a patient signature gap on the ePCR.",
+  "direction": "An ambulance billing pre submission scrubber: predicts the denial reason from the closed ePCR + dispatch trace, points the medic at the missing field, and proves it would have cleared payer adjudication.",
+  "why": "NEMSIS as the substrate is the non obvious technical bet. Every shop currently building \"EMS billing AI\" wires per vendor connectors. NEMSIS makes the integration set N=1.",
+  "terms": [
+    "ambulance",
+    "claim",
+    "denials",
+    "random",
+    "cluster",
+    "small",
+    "failure",
+    "modes",
+    "deterministic",
+    "given",
+    "document",
+    "missing",
+    "origin",
+    "destination",
+    "modifiers",
+    "medical",
+    "necessity",
+    "narrative"
+  ],
+  "metrics": [
+    "ambulance_coverage",
+    "claim_risk",
+    "denials_precision",
+    "random_latency"
+  ],
+  "failure_modes": [
+    "ambulance_drift",
+    "claim_gap",
+    "denials_misroute",
+    "random_blindspot"
+  ],
+  "sources": [
+    "https://www.ycombinator.com/launches/PbA-overdrive-health-ai-powered-rcm-for-ambulance-agencies",
+    "https://www.ycombinator.com/companies/overdrive-health/jobs/THGCs1s-founding-engineer",
+    "https://linkedin.com/in/michael-schroeder-217513bb/",
+    "https://x.com/ycombinator/status/2029315960830611864",
+    "https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system",
+    "https://www.imagetrend.com/platform/epcr-software/",
+    "https://www.eso.com/",
+    "https://www.novaoneadvisor.com/report/us-emergency-medical-services-billing-software-market"
+  ],
+  "github_url": "https://github.com/t7r0n/pre-scrub"
+}
