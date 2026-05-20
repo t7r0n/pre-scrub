@@ -1,11 +1,11 @@
 {
   "layers": [
     {
-      "name": "synthetic_fixture_replay",
+      "name": "fixture_replay",
       "purpose": "exercise ambulance and claim cases"
     },
     {
-      "name": "domain_strategy",
+      "name": "strategy_model",
       "purpose": "score ambulance_coverage and claim_risk"
     },
     {

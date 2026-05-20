@@ -1,6 +1,6 @@
 # Operator Brief: Overdrive Health
 
-Overdrive Health gets a local, deterministic pressure test around ambulance, claim, and denials. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Overdrive Health gets a local, deterministic pressure test around ambulance, claim, and denials. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
