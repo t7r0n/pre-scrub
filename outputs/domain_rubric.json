@@ -1,0 +1,66 @@
+{
+  "repo": "pre-scrub",
+  "company": "Overdrive Health",
+  "rubric_axes": [
+    {
+      "axis": "ambulance_coverage",
+      "failures": [
+        "ambulance_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "claim_risk",
+      "failures": [
+        "claim_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "denials_precision",
+      "failures": [
+        "denials_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "random_latency",
+      "failures": [
+        "random_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "ambulance evidence replay",
+      "trigger": "ambulance signal changes while claim context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "claim boundary probe",
+      "trigger": "claim handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "denials regression harness",
+      "trigger": "denials behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "random operator packet",
+      "trigger": "random output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.ycombinator.com/launches/PbA-overdrive-health-ai-powered-rcm-for-ambulance-agencies",
+    "https://www.ycombinator.com/companies/overdrive-health/jobs/THGCs1s-founding-engineer",
+    "https://linkedin.com/in/michael-schroeder-217513bb/",
+    "https://x.com/ycombinator/status/2029315960830611864",
+    "https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system",
+    "https://www.imagetrend.com/platform/epcr-software/",
+    "https://www.eso.com/",
+    "https://www.novaoneadvisor.com/report/us-emergency-medical-services-billing-software-market"
+  ]
+}

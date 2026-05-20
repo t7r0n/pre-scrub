@@ -9,74 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "ambulance drift",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 2.5,
-      "mean_score": 0.4,
+      "scenario": "ambulance evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4232,
       "top_evidence_id": "ev_0088",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "block release until cited evidence is regenerated"
     },
     {
-      "scenario": "ambulance evidence recall",
-      "cases": 24,
+      "scenario": "claim boundary probe",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 3,
-      "mean_severity": 1.875,
-      "mean_score": 0.2801,
-      "top_evidence_id": "ev_0000",
-      "recommended_action": "block release until replay is understood"
+      "reviews": 4,
+      "mean_severity": 2.528,
+      "mean_score": 0.3902,
+      "top_evidence_id": "ev_0077",
+      "recommended_action": "route to reviewer with evidence packet"
     },
     {
-      "scenario": "claim gap",
-      "cases": 24,
+      "scenario": "denials regression harness",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 2,
-      "mean_severity": 3.333,
-      "mean_score": 0.5224,
+      "reviews": 5,
+      "mean_severity": 2.528,
+      "mean_score": 0.3965,
+      "top_evidence_id": "ev_0022",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "scenario": "random operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.3977,
       "top_evidence_id": "ev_0011",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "claim reviewer handoff",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 2.583,
-      "mean_score": 0.4116,
-      "top_evidence_id": "ev_0055",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "denials failure replay",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 3.333,
-      "mean_score": 0.5058,
-      "top_evidence_id": "ev_0110",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "random policy boundary",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 1.708,
-      "mean_score": 0.2815,
-      "top_evidence_id": "ev_0033",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     }
   ],
   "highest_risk": {
-    "scenario": "claim gap",
-    "cases": 24,
-    "blocks": 3,
-    "reviews": 2,
-    "mean_severity": 3.333,
-    "mean_score": 0.5224,
-    "top_evidence_id": "ev_0011",
-    "recommended_action": "block release until replay is understood"
+    "scenario": "ambulance evidence replay",
+    "cases": 36,
+    "blocks": 4,
+    "reviews": 5,
+    "mean_severity": 2.611,
+    "mean_score": 0.4232,
+    "top_evidence_id": "ev_0088",
+    "recommended_action": "block release until cited evidence is regenerated"
   }
 }
