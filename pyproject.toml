@@ -1,7 +1,7 @@
 [project]
 name = "pre-scrub"
 version = "0.1.0"
-description = "An ambulance billing pre submission scrubber: predicts the denial reason from the closed ePCR + dispatch trace, points the medic at the miss"
+description = "An ambulance billing pre submission scrubber: predicts the denial reason from the closed ePCR + dispatch trace, points t"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

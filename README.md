@@ -53,17 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.ycombinator.com/launches/PbA-overdrive-health-ai-powered-rcm-for-ambulance-agencies
-- https://www.ycombinator.com/companies/overdrive-health/jobs/THGCs1s-founding-engineer
-- https://linkedin.com/in/michael-schroeder-217513bb/
-- https://x.com/ycombinator/status/2029315960830611864
-- https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system
-- https://www.imagetrend.com/platform/epcr-software/
-- https://www.eso.com/
-- https://www.novaoneadvisor.com/report/us-emergency-medical-services-billing-software-market
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.

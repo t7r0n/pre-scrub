@@ -1,37 +1,37 @@
 {
-  "company": "Overdrive Health",
+  "company": "Pre Scrub",
   "repo": "pre-scrub",
   "metrics": [
-    "ambulance_coverage",
-    "claim_risk",
-    "denials_precision",
-    "random_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "ambulance_drift",
-    "claim_gap",
-    "denials_misroute",
-    "random_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "domain_archetypes": [
     {
-      "name": "ambulance evidence replay",
-      "trigger": "ambulance signal changes while claim context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "claim boundary probe",
-      "trigger": "claim handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "denials regression harness",
-      "trigger": "denials behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "random operator packet",
-      "trigger": "random output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],

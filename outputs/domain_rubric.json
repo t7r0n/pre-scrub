@@ -1,66 +1,57 @@
 {
   "repo": "pre-scrub",
-  "company": "Overdrive Health",
+  "company": "Pre Scrub",
   "rubric_axes": [
     {
-      "axis": "ambulance_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "ambulance_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "claim_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "claim_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "denials_precision",
+      "axis": "claim_precision",
       "failures": [
-        "denials_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "random_latency",
+      "axis": "review_latency",
       "failures": [
-        "random_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "ambulance evidence replay",
-      "trigger": "ambulance signal changes while claim context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "claim boundary probe",
-      "trigger": "claim handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "denials regression harness",
-      "trigger": "denials behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "random operator packet",
-      "trigger": "random output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.ycombinator.com/launches/PbA-overdrive-health-ai-powered-rcm-for-ambulance-agencies",
-    "https://www.ycombinator.com/companies/overdrive-health/jobs/THGCs1s-founding-engineer",
-    "https://linkedin.com/in/michael-schroeder-217513bb/",
-    "https://x.com/ycombinator/status/2029315960830611864",
-    "https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system",
-    "https://www.imagetrend.com/platform/epcr-software/",
-    "https://www.eso.com/",
-    "https://www.novaoneadvisor.com/report/us-emergency-medical-services-billing-software-market"
-  ]
+  "sources_used": []
 }
